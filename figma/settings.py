@@ -11,6 +11,7 @@ https://docs.djangoproject.com/en/5.1/ref/settings/
 """
 
 from pathlib import Path
+import os
 
 # Build paths inside the project like this: BASE_DIR / 'subdir'.
 BASE_DIR = Path(__file__).resolve().parent.parent
@@ -41,7 +42,6 @@ INSTALLED_APPS = [
     'customer',
     'service_provider',
     
-    'rest_framework',
 ]
 
 MIDDLEWARE = [
@@ -55,6 +55,10 @@ MIDDLEWARE = [
 ]
 
 ROOT_URLCONF = 'figma.urls'
+
+# Where to store uploaded files
+MEDIA_URL = '/media/'
+MEDIA_ROOT = os.path.join(BASE_DIR, 'media')
 
 TEMPLATES = [
     {
@@ -126,3 +130,13 @@ STATIC_URL = 'static/'
 # https://docs.djangoproject.com/en/5.1/ref/settings/#default-auto-field
 
 DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
+
+
+#REST_FRAMEWORK = {  
+   # 'DEFAULT_PERMISSION_CLASSES': [     
+    #    'rest_framework.permissions.IsAuthenticated', 
+    #], 
+    #'DEFAULT_AUTHENTICATION_CLASSES': [
+        #'rest_framework.authentication.TokenAuthentication', 
+    #], 
+#} 
