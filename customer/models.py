@@ -16,7 +16,7 @@ class Customer(models.Model):
     )
 
     user = models.ForeignKey(User, on_delete=models.CASCADE, related_name='customer')
-    #custom_id = models.CharField(max_length=20, unique=True, editable=False, blank=True)  # Custom ID field
+    custom_id = models.CharField(max_length=20, unique=True, editable=False, blank=True)  # Custom ID field
     profile_image = models.ImageField(upload_to='c-profile-images/', null=True, blank=True, validators=[validate_file_size])#Customer specific field
     full_name = models.CharField(max_length=100)
     address = models.TextField()

@@ -1,0 +1,58 @@
+[
+    {
+        "model": "service_search.category",
+        "pk": 1,
+        "fields": {
+            "title": "Home Services",
+            "description": "Various home services.",
+            "status": "Active"
+        }
+    },
+    {
+        "model": "service_search.category",
+        "pk": 2,
+        "fields": {
+            "title": "Beauty Services",
+            "description": "Beauty and grooming services.",
+            "status": "Active"
+        }
+    },
+    {
+        "model": "service_search.subcategory",
+        "pk": 1,
+        "fields": {
+            "title": "Cleaning",
+            "category": 1,
+            "description": "Professional cleaning services.",
+            "status": "Active"
+        }
+    },
+    {
+        "model": "service_search.subcategory",
+        "pk": 2,
+        "fields": {
+            "title": "Makeup",
+            "category": 2,
+            "description": "Professional makeup services.",
+            "status": "Active"
+        }
+    },
+    {
+        "model": "service_search.serviceprovider",
+        "pk": 1,
+        "fields": {
+            "name": "John",
+            "subcategory": 1,
+            "description": "High-quality cleaning services."
+        }
+    },
+    {
+        "model": "service_search.serviceprovider",
+        "pk": 2,
+        "fields": {
+            "name": "Stella",
+            "subcategory": 2,
+            "description": "Your beauty, our priority."
+        }
+    }
+]
