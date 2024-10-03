@@ -8,6 +8,7 @@
             "status": "Active"
         }
     },
+
     {
         "model": "service_search.category",
         "pk": 2,
@@ -17,42 +18,74 @@
             "status": "Inactive"
         }
     },
+
+     {
+        "model": "service_search.category",
+        "pk": 2,
+        "fields": {
+            "title": "Delivery Services",
+            "description": "Package Delivery services.",
+            "status": "Active"
+        }
+    },
+    
     {
         "model": "service_search.subcategory",
         "pk": 1,
         "fields": {
             "title": "Cleaning",
-            "category": 1,
             "description": "Professional cleaning services.",
             "status": "Active"
         }
     },
+
     {
         "model": "service_search.subcategory",
         "pk": 2,
         "fields": {
             "title": "Makeup",
-            "category": 2,
             "description": "Professional makeup services.",
+            "status": "Inactive"
+        }
+    },
+
+     {
+        "model": "service_search.subcategory",
+        "pk": 3,
+        "fields": {
+            "title": "Cake Delivery",
+            "description": "Delivering Cakes and pastries.",
             "status": "Active"
         }
     },
+
     {
         "model": "service_search.serviceprovider",
         "pk": 1,
         "fields": {
             "name": "John",
-            "subcategory": 1,
-            "description": "High-quality cleaning services."
+            "description": "High-quality cleaning services.",
+            "status": "Active"
         }
     },
+
     {
         "model": "service_search.serviceprovider",
         "pk": 2,
         "fields": {
             "name": "Stella",
-            "subcategory": 2,
-            "description": "Your beauty, our priority."
+            "description": "Your beauty, our priority.",
+            "status": "Active"
+        }
+    },
+
+    {
+        "model": "service_search.serviceprovider",
+        "pk": 3,
+        "fields": {
+            "name": "Thomas",
+            "description": "Delivering Cakes and pastries.",
+            "status": "Inactive"
         }
     }
 ]
