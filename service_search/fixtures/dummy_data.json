@@ -14,7 +14,7 @@
         "fields": {
             "title": "Beauty Services",
             "description": "Beauty and grooming services.",
-            "status": "Active"
+            "status": "Inactive"
         }
     },
     {

@@ -1,6 +1,7 @@
 # service_search/urls.py
 
 from django.urls import path
+from .models import Category, Subcategory, ServiceProvider
 from .views import CategoryListView, SubcategoryListView, ServiceProviderListView
 
 urlpatterns = [

@@ -41,7 +41,6 @@ INSTALLED_APPS = [
     'django_filters',
     'Accounts',
     'customer',
-    'service_provider',
     'service_search',
     
 ]
